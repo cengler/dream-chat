@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat de Viajes - Conversaciones</title>
+    
+    <!-- Vuetify CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@3.4.0/dist/vuetify.min.css" rel="stylesheet">
+    
+    <!-- Material Design Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet">
+    
+    <!-- Vue 3 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <!-- Vuetify -->
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@3.4.0/dist/vuetify.min.js"></script>
+    
+    <style>
+        .main-container {
+            height: 100vh;
+            display: flex;
+        }
+        
+        .sidebar {
+            width: 300px;
+            background-color: #f5f5f5;
+            border-right: 1px solid #e0e0e0;
+            overflow-y: auto;
+        }
+        
+        .content-area {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        
+        .message-user {
+            background-color: #1976d2;
+            color: white;
+            margin-left: 20%;
+            border-radius: 18px 18px 4px 18px;
+        }
+        
+        .message-assistant {
+            background-color: #f5f5f5;
+            color: #333;
+            margin-right: 20%;
+            border-radius: 18px 18px 18px 4px;
+        }
+        
+        .message-content {
+            padding: 12px 16px;
+            margin: 8px 0;
+            word-wrap: break-word;
+        }
+        
+        .board-skeleton {
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .hotel-skeleton {
+            margin-bottom: 16px;
+        }
+        
+        .conversation-item {
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .conversation-item:hover {
+            background-color: #e3f2fd;
+        }
+        
+        .v-list-item--active {
+            background-color: #e3f2fd !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <v-app>
+            <div class="main-container">
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <v-list>
+                        <v-list-item class="pa-4">
+                            <v-list-item-title class="text-h6">
+                                <v-icon left color="primary">mdi-chat</v-icon>
+                                Conversaciones
+                            </v-list-item-title>
+                        </v-list-item>
+                        
+                        <v-divider></v-divider>
+                        
+                        <v-list-item
+                            v-for="conversacion in conversaciones"
+                            :key="conversacion.id"
+                            :class="{ 'v-list-item--active': activeTab === conversacion.id }"
+                            @click="activeTab = conversacion.id"
+                            class="conversation-item"
+                        >
+                            <template v-slot:prepend>
+                                <v-icon :color="activeTab === conversacion.id ? 'primary' : 'grey'">
+                                    mdi-chat-outline
+                                </v-icon>
+                            </template>
+                            
+                            <v-list-item-title>{{ conversacion.titulo }}</v-list-item-title>
+                            
+                            <template v-slot:append>
+                                <v-chip size="small" color="primary" variant="outline">
+                                    {{ conversacion.mensajes.length }}
+                                </v-chip>
+                            </template>
+                        </v-list-item>
+                    </v-list>
+                </div>
+                
+                <!-- Content Area -->
+                <div class="content-area">
+                    <div v-for="conversacion in conversaciones" :key="conversacion.id" v-show="activeTab === conversacion.id">
+                        <h1 class="mb-6">
+                            <v-icon left color="primary">mdi-chat</v-icon>
+                            {{ conversacion.titulo }}
+                        </h1>
+                        
+                        <v-card elevation="2">
+                            <v-card-text>
+                                <div v-for="(mensaje, index) in conversacion.mensajes" :key="index">
+                                    <div :class="mensaje.rol === 'user' ? 'message-user' : 'message-assistant'">
+                                        <div class="message-content">
+                                            <div class="d-flex align-center">
+                                                <v-icon :color="mensaje.rol === 'user' ? 'white' : 'primary'" class="mr-2">
+                                                    {{ mensaje.rol === 'user' ? 'mdi-account' : 'mdi-robot' }}
+                                                </v-icon>
+                                                <span class="font-weight-medium">
+                                                    {{ mensaje.rol === 'user' ? 'Usuario' : 'Asistente' }}
+                                                </span>
+                                            </div>
+                                            <div class="mt-2">{{ mensaje.texto }}</div>
+                                            
+                                            <!-- Board Skeleton -->
+                                            <div v-if="mensaje.tieneBoard" class="mt-3">
+                                                <v-card elevation="1" class="board-skeleton">
+                                                    <v-card-title class="text-subtitle-1">
+                                                        <v-icon left color="primary">mdi-view-dashboard</v-icon>
+                                                        Resultados de búsqueda
+                                                    </v-card-title>
+                                                    <v-card-text>
+                                                        <v-row>
+                                                            <v-col cols="12" md="6" v-for="n in 2" :key="n">
+                                                                <v-card elevation="0" class="hotel-skeleton">
+                                                                    <v-skeleton-loader
+                                                                        type="image, article"
+                                                                        height="200"
+                                                                    ></v-skeleton-loader>
+                                                                </v-card>
+                                                            </v-col>
+                                                        </v-row>
+                                                    </v-card-text>
+                                                </v-card>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </v-card-text>
+                        </v-card>
+                    </div>
+                </div>
+            </div>
+        </v-app>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
