@@ -1,0 +1,212 @@
+{
+  "conversaciones": [
+    {
+      "id": 1,
+      "titulo": "Hoteles en Madrid",
+      "mensajes": [
+        {
+          "rol": "user",
+          "texto": "Hoteles en madrid",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "¡Hola! Me encanta ayudarte a encontrar el hotel perfecto en Madrid. Para darte las mejores opciones, necesito conocer algunos detalles de tu viaje. ¿Cuándo planeas viajar a Madrid?",
+          "tieneBoard": false
+        },
+        {
+          "rol": "user",
+          "texto": "El próximo mes, del 15 al 18 de marzo",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "Perfecto, del 15 al 18 de marzo. ¿Cuántas personas serán? Y también me gustaría saber qué tipo de experiencia buscas en Madrid - ¿prefieres estar cerca del centro histórico, cerca de museos, o tienes alguna zona específica en mente?",
+          "tieneBoard": false
+        },
+        {
+          "rol": "user",
+          "texto": "Somos 2 personas, mi pareja y yo. Queremos estar cerca del centro para poder caminar a los lugares principales",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "Excelente elección, el centro de Madrid es perfecto para explorar caminando. Déjame buscar hoteles en esa zona para esas fechas. ¿Tienes alguna preferencia de precio o categoría de hotel?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Algo cómodo pero no muy caro, tal vez 3 o 4 estrellas",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "Perfecto, he encontrado varias opciones excelentes de 3-4 estrellas en el centro de Madrid para esas fechas. Los precios están muy bien, entre 80-120€ por noche. ¿Te gustaría que filtre por alguna amenidad específica como desayuno incluido, gimnasio, o piscina?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Sí, que tenga desayuno incluido sería ideal",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "¡Excelente! He filtrado los resultados y ahora tienes opciones fantásticas con desayuno incluido. Los precios siguen siendo muy competitivos. ¿Te gustaría ver fotos de alguno de estos hoteles o prefieres que te cuente más detalles sobre las ubicaciones específicas?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Me gustaría ver fotos del Hotel NH Collection Madrid Centro",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "¡Perfecto! El NH Collection Madrid Centro es una excelente elección. Déjame mostrarte las fotos de este hotel. Tiene una ubicación privilegiada en el centro histórico y las habitaciones son muy elegantes. ¿Te gusta lo que ves?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Sí, me gusta mucho. ¿Qué habitaciones tienen disponibles?",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "Excelente elección. Para esas fechas tienen varias opciones de habitaciones disponibles. Tienen habitaciones dobles estándar, habitaciones superiores con vista a la ciudad, y suites ejecutivas. Los precios van desde 95€ hasta 180€ por noche. ¿Qué tipo de habitación prefieres?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Una habitación superior con vista a la ciudad me parece perfecta",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "¡Fantástico! La habitación superior con vista a la ciudad es de 125€ por noche, incluye desayuno buffet y tiene una vista espectacular del centro histórico de Madrid. Para 3 noches serían 375€ en total. ¿Te parece bien proceder con la reserva?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Sí, perfecto. Quiero hacer la reserva",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "¡Excelente! Hace click en el botón de abajo para iniciar el proceso de reserva",
+          "tieneBoard": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Hotel Palladium Mexico - Sin disponibilidad",
+      "mensajes": [
+        {
+          "rol": "user",
+          "texto": "Hotel Palladium Mexico",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "¡Hola! El Hotel Palladium es una excelente opción en México. Para ayudarte mejor, necesito saber cuándo planeas viajar y por cuántas noches. ¿Tienes fechas específicas en mente?",
+          "tieneBoard": false
+        },
+        {
+          "rol": "user",
+          "texto": "Para el 20 de abril, por 5 noches",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "Perfecto, del 20 al 25 de abril. Déjame verificar la disponibilidad en el Hotel Palladium para esas fechas. ¿Cuántas personas serán y qué tipo de habitación prefieres?",
+          "tieneBoard": false
+        },
+        {
+          "rol": "user",
+          "texto": "Somos 2 adultos, una habitación doble está bien",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "Entiendo perfectamente. Lamentablemente, el Hotel Palladium no tiene disponibilidad para esas fechas específicas. Pero no te preocupes, tengo excelentes alternativas en la misma zona con características similares. ¿Te gustaría que te muestre opciones comparables con precios similares?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "¿Qué otras opciones tienes en esa zona?",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "He encontrado varios hoteles de 4-5 estrellas en la misma zona con amenities similares al Palladium. Algunos incluso tienen mejores vistas y servicios. Los precios están muy competitivos para esas fechas. ¿Te interesa algún tipo específico de amenidad como spa, múltiples restaurantes, o acceso directo a la playa?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Me gustaría que tenga spa y acceso a la playa",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "¡Perfecto! He filtrado las opciones y ahora tienes hoteles fantásticos con spa y acceso directo a la playa. Algunos incluso tienen mejores instalaciones que el Palladium original. ¿Te gustaría ver fotos de estos hoteles o prefieres que te ayude a seleccionar una habitación específica?",
+          "tieneBoard": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Playa el próximo finde con sol",
+      "mensajes": [
+        {
+          "rol": "user",
+          "texto": "Quiero ir a la playa el próximo finde que hay sol",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "¡Qué ganas de playa! Me encanta ayudarte a planificar un fin de semana perfecto. Para encontrar el destino ideal con buen clima, necesito saber desde dónde viajas y si tienes alguna preferencia de destino. ¿Desde qué ciudad sales y tienes algún país o región en mente?",
+          "tieneBoard": false
+        },
+        {
+          "rol": "user",
+          "texto": "Salgo desde Madrid y me da igual el destino, solo quiero sol y playa",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "Perfecto, desde Madrid tienes opciones increíbles. Déjame revisar las tendencias de clima para el próximo fin de semana y buscar destinos con las mejores condiciones. ¿Prefieres un vuelo corto (2-3 horas) o no te importa viajar un poco más lejos?",
+          "tieneBoard": false
+        },
+        {
+          "rol": "user",
+          "texto": "Prefiero vuelos cortos, máximo 3 horas",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "Excelente elección. He revisado las tendencias climáticas y tengo opciones fantásticas con vuelos cortos desde Madrid. Los precios están muy bien para el próximo fin de semana. ¿Tienes alguna preferencia de tipo de playa - más urbana con actividades, o más tranquila y relajante?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Algo tranquilo, para relajarme",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "Perfecto, he filtrado destinos con playas tranquilas y relajantes. Los precios están excelentes para el próximo fin de semana. ¿Te gustaría que busque hoteles en estos destinos o prefieres primero decidir el destino específico?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Busca hoteles, algo cómodo cerca de la playa",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "¡Fantástico! He encontrado hoteles perfectos cerca de la playa en estos destinos tranquilos. Todos tienen excelentes ubicaciones y precios muy competitivos para el próximo fin de semana. ¿Te gustaría ver fotos de estos hoteles o prefieres que te ayude a seleccionar una habitación específica?",
+          "tieneBoard": true
+        }
+      ]
+    }
+  ]
+}
