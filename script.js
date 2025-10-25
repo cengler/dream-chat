@@ -11,7 +11,8 @@ createApp({
     data() {
         return {
             conversaciones: [],
-            activeTab: 1
+            activeTab: 1,
+            drawer: null
         }
     },
     async mounted() {
@@ -45,6 +46,21 @@ createApp({
                 }
             ];
             this.activeTab = 1;
+        }
+    },
+    methods: {
+        selectConversation(conversationId) {
+            this.activeTab = conversationId;
+            // Close drawer on mobile when selecting a conversation
+            if (this.$vuetify.display.smAndDown) {
+                this.drawer = false;
+            }
+        }
+    },
+    watch: {
+        activeTab() {
+            // Scroll to top when changing conversations
+            window.scrollTo(0, 0);
         }
     }
 }).use(vuetify).mount('#app');
