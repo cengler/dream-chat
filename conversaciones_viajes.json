@@ -207,6 +207,162 @@
           "tieneBoard": true
         }
       ]
+    },
+    {
+      "id": 4,
+      "titulo": "Vuelo a Barcelona + Hotel con checkout",
+      "mensajes": [
+        {
+          "rol": "user",
+          "texto": "Busco un vuelo a Barcelona para el próximo mes",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "¡Qué bueno que me consultes! Barcelona es una ciudad increíble, vas a amar tu viaje. Para encontrar el vuelo perfecto y asegurarte de conseguir las mejores tarifas, necesito algunos datos. ¿Tenías fechas ya definidas? Y desde qué ciudad estarías saliendo?",
+          "tieneBoard": false
+        },
+        {
+          "rol": "user",
+          "texto": "Desde Madrid, el 10 al 15 de mayo",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "Perfecto, del 10 al 15 de mayo desde Madrid. Te cuento que mayo es una época excelente para visitar Barcelona, el clima es ideal. ¿Cuántas personas viajarían? Y otra cosa importante, ¿preferís salir por la mañana para aprovechar mejor el día o te da igual el horario?",
+          "tieneBoard": false
+        },
+        {
+          "rol": "user",
+          "texto": "Somos 2 personas, preferimos salir por la mañana",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "Excelente, para 2 personas y salida matutina. Déjame buscar las mejores opciones para vos. Una consulta rápida: ¿preferís vuelo directo o te serviría una escala si el precio es mucho mejor? A veces la diferencia es significativa.",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Directo preferiblemente",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "Perfecto, entiendo, los vuelos directos son más cómodos y ahorran tiempo. Mirá, encontré varias opciones muy buenas con salida por la mañana. Tengo 3 opciones que te recomiendo: Iberia a las 8:30 AM por $125.000 por persona, Vueling a las 7:45 AM por $110.000 por persona, y Air Europa a las 9:15 AM por $135.000 por persona. Todas son excelentes, pero el de Iberia a las 8:30 tiene el mejor balance entre horario y precio. ¿Cuál te interesa más o querés ver los detalles de todas?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Muéstrame detalles del vuelo de Iberia a las 8:30",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "¡Excelente elección! El vuelo de Iberia a las 8:30 AM es perfecto. Salida el 10 de mayo desde Madrid-Barajas, llegás a Barcelona-El Prat a las 9:45 AM - así tenés el día completo por delante. Incluye equipaje de mano y servicio a bordo. El precio es de $125.000 por persona, total $250.000 para ambos. Te aviso que esta tarifa tiene buena disponibilidad pero suele llenarse rápido. ¿Te parece que lo reservemos ahora?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Sí, me gusta. Quiero agregarlo al carrito",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "¡Perfecto! Para agregar productos al carrito necesitás estar registrado. Es súper rápido - solo necesitás email y contraseña. Una vez que ingreses, podés agregarlo al carrito y decidir: podés comprar solo el vuelo ahora mismo por $250.000, o si lo combinás con hotel tenemos descuentos especiales (hasta 5% de descuento en el hotel) y además Barcelona en mayo se llena bastante así que te recomiendo reservar hotel cuanto antes. ¿Tenés cuenta o querés crear una nueva?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "(ingresa con user y pass)",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "¡Perfecto! Una vez que ingreses, el vuelo quedará guardado en tu carrito. Ya que estás organizando el viaje, te recomiendo que busquemos hotel también. Si reservás vuelo + hotel juntos además del descuento que mencioné, tenés otras ventajas como cancelación gratuita en ambos hasta 48 horas antes. ¿Te parece que busquemos algo cerca del centro?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Sí, busca hoteles para esas fechas",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "Perfecto, déjame buscar lo mejor para vos. Barcelona tiene zonas súper diferentes y todas tienen su encanto. Te doy 3 opciones principales: centro histórico (Las Ramblas, Barrio Gótico - todo caminando, muy turístico), cerca de la playa (Barceloneta - más relajado, ambiente playero), o zona modernista (Paseo de Gracia - elegante, cerca de La Pedrera y Sagrada Familia). Para primera vez, el centro o zona modernista son las más recomendadas. ¿Cuál te llama más la atención o querés que busque en varias zonas?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Cerca del centro, para poder caminar a las principales atracciones",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "Excelente elección, el centro es lo mejor para primera vez en Barcelona. Todo queda caminando y la experiencia es única. Te encontré opciones increíbles cerca de Las Ramblas y el Barrio Gótico - zonas súper seguras y con todo cerca. ¿Qué tipo de comodidad buscás? Tengo de 3, 4 y 5 estrellas. Para un viaje especial como el tuyo, te recomendaría 4 estrellas - el balance perfecto entre lujo y precio razonable.",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Algo cómodo, 4 estrellas está bien",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "Perfecto, 4 estrellas es ideal. Encontré opciones desde $120.000 hasta $195.000 por noche. Te voy a mostrar los 3 mejores que tengo ahora mismo: el Hotel Casa Fuster por $155.000 la noche (diseño modernista, spa, terraza con piscina), el Hotel 1898 por $135.000 la noche (ubicación excelente en Las Ramblas, estilo boutique), y el Hotel Praktik Rambla por $125.000 la noche (muy bien ubicado, precio excelente). Todos están súper bien ubicados. ¿Cuál te interesa más? ¿Querés que te muestre detalles de alguno en particular?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Muéstrame detalles del Hotel Casa Fuster",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "El Casa Fuster es una joya de Barcelona. Está en pleno Paseo de Gracia, a 2 cuadras de Las Ramblas y cerca de La Pedrera y la Sagrada Familia. Tiene arquitectura modernista increíble, spa completo, terraza con piscina con vistas espectaculares, y el restaurante es de primera. Las habitaciones son espaciosas, muy elegantes. Es de los hoteles más recomendados por los viajeros. ¿Querés ver las fotos para que te des una mejor idea?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Sí, muéstrame fotos",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "¡Acá tenés las fotos! Como podés ver, es realmente hermoso. La terraza con piscina tiene vistas 360° de Barcelona - es espectacular para relajarse después de un día de caminar. Las habitaciones son súper amplias y con diseño único. Lo que más me gusta es la ubicación - estás a pasos de todo pero en una zona tranquila y elegante. ¿Qué te parece? ¿Te gusta lo que ves?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Sí, me encanta. Quiero agregarlo al carrito",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "¡Me alegra que te haya gustado! Es una excelente elección. Antes de agregarlo al carrito, necesito que elijas el tipo de habitación. Tenemos 3 opciones: habitación estándar por $145.000 la noche, habitación superior con vista por $155.000 la noche (esta es la más elegida - tiene balcón con vistas increíbles), y suite junior por $195.000 la noche. La habitación superior con vista es la que más recomiendo porque realmente vale la pena la diferencia y además al combinarla con tu vuelo ya reservado tenés beneficios extras. ¿Cuál te gustaría?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "La habitación superior con vista me parece perfecta",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "¡Excelente decisión! Esa habitación es la favorita de todos. Tiene balcón privado con vistas espectaculares de Barcelona, es más amplia, y el desayuno buffet está incluido. El precio normal es de $155.000 por noche, para las 5 noches serían $775.000 en total. Como ya tenés el vuelo en tu carrito, al agregar el hotel tenés un descuento automático del 5% en el hotel - eso te ahorra casi $39.000. Además, al completar vuelo + hotel, el descuento se aplica automáticamente y podés pagar todo junto con las mismas ventajas de cancelación. ¿Te parece bien agregarlo al carrito?",
+          "tieneBoard": true
+        },
+        {
+          "rol": "user",
+          "texto": "Sí, agrégame el hotel al carrito",
+          "tieneBoard": false
+        },
+        {
+          "rol": "asistente",
+          "texto": "¡Perfecto! Ya está todo en tu carrito. Tenés vuelo + hotel seleccionados - excelente que hayas elegido el paquete completo porque ya se aplicó automáticamente el descuento del 5% en el hotel. Tu reserva total es de $986.000 (vuelo: $250.000 + hotel: $736.000 con el descuento del 5% aplicado - te ahorraste $39.000). Todo está listo para confirmar. Al reservar vuelo + hotel juntos tenés hasta 48 horas para cancelar ambos sin cargo y además podés pagar en cuotas sin interés. ¿Querés revisar los detalles y proceder con el checkout?",
+          "tieneBoard": true
+        }
+      ]
     }
   ]
 }
